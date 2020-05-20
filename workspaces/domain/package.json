@@ -1,5 +1,10 @@
 {
   "name": "@useoptic/domain",
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/opticdev/optic.git",
+    "directory": "workspaces/domain"
+  },
   "version": "8.0.6",
   "scripts": {
     "ws:test": "echo domain",
