@@ -1,0 +1,9 @@
+name: Example
+tasks:
+  # The default task, invoke using `api run start`
+  # Learn how to finish setting up Optic at http://docs.useoptic.com/setup
+  start:
+    command: node index.js
+    baseUrl: http://0.0.0.0:4005
+ignoreRequests:
+  - OPTIONS *

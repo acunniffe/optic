@@ -1,0 +1,29 @@
+version: '3.4'
+services:
+  install_dry_run_node:
+    build:
+      context: install-dry-runs/node_container/
+      network: host
+  json_server:
+    build:
+      context: json-server
+      network: host
+    ports:
+      - "4005:4005"
+# Actual Instances of the JSON Servers
+  aidan_json_server:
+    environment:
+      - DB_NAME=db.json
+    depends_on:
+      - json_server
+    image: containers_json_server:latest
+    ports:
+    - 6001:4005
+  second_json_server:
+    environment:
+      - DB_NAME=example-db.json
+    depends_on:
+      - json_server
+    image: containers_json_server:latest
+    ports:
+    - 6002:4005
