@@ -16,28 +16,28 @@
 <!-- usage -->
 ```sh-session
 $ npm install -g @useoptic/ci-cli
-$ optic-agent COMMAND
+$ optic-ci COMMAND
 running command...
-$ optic-agent (-v|--version|version)
-@useoptic/ci-cli/8.1.0 darwin-x64 node-v12.4.0
-$ optic-agent --help [COMMAND]
+$ optic-ci (-v|--version|version)
+@useoptic/ci-cli/8.1.1 darwin-x64 node-v12.4.0
+$ optic-ci --help [COMMAND]
 USAGE
-  $ optic-agent COMMAND
+  $ optic-ci COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`optic-agent capture:start`](#optic-agent-capturestart)
-* [`optic-agent help [COMMAND]`](#optic-agent-help-command)
+* [`optic-ci capture:start`](#optic-ci-capturestart)
+* [`optic-ci help [COMMAND]`](#optic-ci-help-command)
 
-## `optic-agent capture:start`
+## `optic-ci capture:start`
 
 describe the command here
 
 ```
 USAGE
-  $ optic-agent capture:start
+  $ optic-ci capture:start
 
 OPTIONS
   --build-id=build-id            (required) a unique identifier representing the version of the code, build process, and
@@ -54,15 +54,15 @@ EXAMPLE
   $ optic-ci capture:start ???
 ```
 
-_See code: [src/commands/capture/start.ts](https://github.com/useoptic/optic-package/blob/v8.1.0/src/commands/capture/start.ts)_
+_See code: [src/commands/capture/start.ts](https://github.com/useoptic/optic-package/blob/v8.1.1/src/commands/capture/start.ts)_
 
-## `optic-agent help [COMMAND]`
+## `optic-ci help [COMMAND]`
 
-display help for optic-agent
+display help for optic-ci
 
 ```
 USAGE
-  $ optic-agent help [COMMAND]
+  $ optic-ci help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
